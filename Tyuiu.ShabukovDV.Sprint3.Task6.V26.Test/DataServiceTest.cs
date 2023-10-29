@@ -8,8 +8,13 @@ namespace Tyuiu.ShabukovDV.Sprint3.Task6.V26.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void DivSumCheck()
         {
+
+            {
+                DataService service1 = new DataService();
+                Assert.AreEqual(33, service1.GetSumTheDivisors(15, 22));
+            }
         }
     }
 }
